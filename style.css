@@ -9,27 +9,22 @@
   color: #fef7ee;
 }
 
-.body {
-  font-size: 1rem;
-}
-
-.label {
-  font-size: 0.875rem;
-}
-
-.small {
-  font-size: 0.625rem;
-}
-
-.price {
-  font-size: 0.75rem;
-}
-
 .bg-img {
   max-width: 100%;
   display: block;
   width: 100vw;
   position: relative;
+}
+
+.container {
+  border-radius: 8px;
+  position: absolute;
+  width: 800px;
+  top: 10vh;
+  left: 10vw;
+  z-index: 300;
+  justify-content: center;
+  background-color: #1b1d1f;
 }
 
 .bg-container {
@@ -38,20 +33,9 @@
   overflow: hidden;
 }
 
-.container {
-  border-radius: 8px;
-  position: absolute;
-  width: 80vw;
-  top: 10vh;
-  left: 10vw;
-  z-index: 300;
-  justify-content: center;
-  background-color: #1b1d1f;
-}
-
 .text {
   position: relative;
-  max-width: 43vw;
+  width: 480px;
   margin: 4rem auto;
   text-align: center;
 }
@@ -60,8 +44,8 @@
   position: absolute;
   max-width: 100%;
   z-index: -100;
-  right: 20vw;
-  top: 5vh;
+  right: 145px;
+  top: 15px;
 }
 
 .description {
@@ -71,19 +55,33 @@
 
 .text button {
   cursor: pointer;
-  border: none;
-  padding: 0.5rem 0.75rem;
+  border: 1px transparent solid;
   border-radius: 8px;
+  padding: 0.5rem 0.75rem;
   margin: 0.75rem 0.15rem;
   color: #fef7ee;
   background: #6f757c;
+
+}
+
+.text button:hover {
+  background: none;
+  border: 1px solid #6f757c;
 }
 
 #available {
+  border: 1px transparent solid;
   background: none;
 }
 
+#available:hover {
+  box-sizing: border-box;
+  border: 1px #6f757c solid;
+  border-radius: 8px;
+}
+
 .coffes-container {
+  margin: 0 auto;
   padding: 0 4rem;
   justify-content: space-around;
   display: flex;
@@ -93,13 +91,30 @@
 .coffes-item img {
   max-width: 100%;
   border-radius: 8px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.675rem;
+}
+
+.coffe--img {
+  position: relative;
 }
 
 .coffes-item {
+  position: relative;
   max-width: 20vw;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
 
+.popular {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  left: 0;
+  padding: 4px 10px;
+
+  font-size: 0.625rem;
+  color: #111315;
+  background: #f6c768;
+  border-radius: 12px;
 }
 
 .coffes-item h2 {
@@ -122,14 +137,33 @@
 }
 
 .rate {
+  margin-top: 4px;
   display: flex;
   font-size: 0.875rem;
   align-items: center;
   color: #fef7ee;
 }
 
+.rate img {
+  margin: auto 0;
+}
+
 .rate span {
-  margin-left: .2rem;
+  margin-left: 0.2rem;
   color: #6f757c;
   font-size: 0.625rem;
+}
+
+.numRate {
+  margin-left: 4px;
+}
+
+span.soldOut {
+  margin-left: 3rem;
+  font-size: 0.75rem;
+  color: #ed735d;
+}
+
+.hidden {
+  display: none;
 }
